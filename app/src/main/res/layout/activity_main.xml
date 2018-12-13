@@ -38,6 +38,7 @@
 
 
     <ListView
+        android:scrollbarThumbVertical="@android:color/transparent"
         android:id="@+id/list_of_message"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
@@ -49,7 +50,9 @@
         android:layout_height="match_parent"
         android:stackFromBottom="true"
         android:transcriptMode="alwaysScroll"
-        android:layout_alignParentLeft="true"></ListView>
+        android:layout_alignParentLeft="true">
+
+    </ListView>
 
 
 
