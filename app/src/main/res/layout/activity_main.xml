@@ -7,12 +7,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+  
+
     <ImageView
         android:id="@+id/emoji_button"
-        android:padding="4dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
         android:src="@drawable/smiley"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
         android:layout_width="40dp"
         android:layout_height="40dp" />
 
@@ -29,12 +32,23 @@
     <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
         android:id="@+id/emojicon_edit_text"
         android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/emoji_button"
+        android:layout_toRightOf="@+id/load_image"
         android:layout_toLeftOf="@+id/submit_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:emojiconSize="28sp"
         />
+
+    <ImageView
+        android:id="@+id/load_image"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingRight="4dp"
+        android:src="@drawable/ic_image_black_24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/emoji_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
 
 
     <ListView

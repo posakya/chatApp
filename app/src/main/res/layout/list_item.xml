@@ -10,23 +10,32 @@
         android:layout_height="wrap_content">
 
     <TextView
-        android:paddingLeft="5dp"
+        android:text="fdsafsdafa"
+        android:paddingRight="5dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/message_user"
+        android:layout_alignParentRight="true"
+        android:id="@+id/message_user_other"
         android:textStyle="normal|bold"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true" />
+        android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="fasdfasdfasdf"
+            android:paddingLeft="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/message_user"
+            android:textStyle="normal|bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
     <TextView
         android:paddingRight="5dp"
         android:layout_alignParentBottom="@+id/message_user"
-        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
         android:id="@+id/message_time"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true" />
+        android:layout_height="wrap_content" />
 
     <com.github.library.bubbleview.BubbleTextView
         android:layout_marginLeft="5dp"
@@ -51,12 +60,52 @@
         android:paddingLeft="5dp"
         />
 
+        <ImageView
+            android:src="@drawable/smiley"
+            android:id="@+id/message_text_image"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/message_text"
+            android:layout_width="200dp"
+            android:layout_height="300dp" />
+
+        <ProgressBar
+
+            android:visibility="gone"
+            android:id="@+id/left_progress_bar"
+            android:layout_marginLeft="40dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:id="@+id/right_progress_bar"
+            android:layout_marginRight="40dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/smiley"
+            android:id="@+id/message_text_other_image"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/message_text_other"
+            android:layout_alignParentRight="true"
+            android:layout_width="200dp"
+            android:layout_height="300dp" />
+
         <com.github.library.bubbleview.BubbleTextView
+
             android:layout_alignParentRight="true"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="5dp"
-            android:layout_below="@id/message_user"
+            android:layout_below="@id/message_user_other"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textColor="#fff"
             android:textSize="18sp"
@@ -75,11 +124,6 @@
             android:paddingLeft="5dp"
             />
 
-        <!--<View-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="1dp"-->
-            <!--android:layout_below="@+id/message_text"-->
-            <!--android:layout_marginTop="7dp"-->
-            <!--android:background="#dedede"/>-->
+
     </RelativeLayout>
 </RelativeLayout>
