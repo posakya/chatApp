@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static int SIGN_IN_REQUEST_CODE = 1;
 //    private FirebaseRecyclerAdapter adapter;
-        private FirebaseListAdapter<ChatMessage> adapter;
+    private FirebaseListAdapter<ChatMessage> adapter;
     RelativeLayout activity_main;
     ShowProgress progress;
 
